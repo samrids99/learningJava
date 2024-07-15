@@ -16,5 +16,6 @@ public class StringSplit {
                 responses[i / 2] = s.substring(i) + "_";
             }
         }
+        return responses;
     }
 }
