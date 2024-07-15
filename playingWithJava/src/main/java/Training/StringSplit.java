@@ -7,5 +7,14 @@ public class StringSplit {
     public static String[] solution(String s) {
         int n = (s.length() + 1) / 2;
         String[] responses = new String[n];
+
+        for (int i = 0; i < s.length(); i += 2) {
+
+            if (i + 1 < s.length()) {
+                responses[i / 2] = s.substring(i, i + 2);
+            } else {
+                responses[i / 2] = s.substring(i) + "_";
+            }
+        }
     }
 }
